@@ -2,9 +2,9 @@
   "name": "template-api-nodejs",
   "description": "initial structure for projects with component-based node",
   "version": "1.0.0",
-  "main": "api/index.js",
+  "main": "myapi/index.js",
   "scripts": {
-    "dev": "nodemon api/index.js --exec babel-node",
+    "dev": "nodemon myapi/index.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
@@ -17,7 +17,7 @@
   },
   "_moduleAliases": {
     "@root": ".",
-    "@api": "api",
+    "@api": "myapi",
     "@config": "config.js",
     "@middlewares": "middlewares",
     "@network": "network",
