@@ -6,6 +6,7 @@ const errors = require('@network/errors')
 const config = require('@config')
 
 const testRouter = require('./components/test/routes')
+const queriesRouter = require('./components/queries/routes')
 
 const app = express()
 
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 // Router
 app.use('/api/test', testRouter)
+app.use('/api/queries', queriesRouter)
 
 // Error Handlers
 app.use(errors)
